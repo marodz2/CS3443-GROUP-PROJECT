@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="rootPane" prefHeight="813.0" prefWidth="1282.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BlackjackController">
+   <children>
+      <ImageView fx:id="backround" fitHeight="909.0" fitWidth="1409.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="dealercard1" fitHeight="243.0" fitWidth="144.0" layoutX="74.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="dealercard2" fitHeight="221.0" fitWidth="145.0" layoutX="74.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true" />
+      <ToolBar maxHeight="45.0" prefHeight="45.0" prefWidth="1409.0">
+        <items>
+          <Button fx:id="returnButton" mnemonicParsing="false" onAction="#returnHome" text="Return" />
+        </items>
+      </ToolBar>
+      <Label fx:id="dealersCards" layoutX="1090.0" layoutY="134.0" prefHeight="129.0" prefWidth="291.0" text="&lt;==== Dealers Cards" textFill="#ff4949">
+         <font>
+            <Font name="Onyx" size="49.0" />
+         </font>
+      </Label>
+      <Label fx:id="playersCards" layoutX="1104.0" layoutY="667.0" prefHeight="129.0" prefWidth="268.0" text="&lt;==== Your Cards" textFill="#ff4747">
+         <font>
+            <Font name="Onyx" size="49.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="playercard1" fitHeight="220.0" fitWidth="144.0" layoutX="74.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="playercard2" fitHeight="220.0" fitWidth="144.0" layoutX="74.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="playercard3" fitHeight="221.0" fitWidth="144.0" layoutX="74.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="playercard4" fitHeight="221.0" fitWidth="144.0" layoutX="74.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="startButton" layoutX="586.0" layoutY="154.0" mnemonicParsing="false" onAction="#startGame" prefHeight="111.0" prefWidth="238.0" text="Start!" />
+      <ImageView fx:id="dealercard3" fitHeight="221.0" fitWidth="144.0" layoutX="75.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="dealercard4" fitHeight="221.0" fitWidth="144.0" layoutX="75.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="dealercard5" fitHeight="221.0" fitWidth="144.0" layoutX="74.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="dealercard6" fitHeight="221.0" fitWidth="144.0" layoutX="74.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="dealercard7" fitHeight="220.0" fitWidth="144.0" layoutX="74.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="startLabel" layoutX="485.0" layoutY="57.0" prefHeight="64.0" prefWidth="441.0" text="Click Below To Start The Game!" textFill="#f23939">
+         <font>
+            <Font name="Onyx" size="57.0" />
+         </font>
+      </Label>
+      <Button fx:id="nextButton" layoutX="1238.0" layoutY="809.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="121.0" text="next" />
+      <Button fx:id="standButton" layoutX="430.0" layoutY="709.0" mnemonicParsing="false" onAction="#Stand" prefHeight="45.0" prefWidth="110.0" text="Stand" />
+      <Button fx:id="hitButton" layoutX="430.0" layoutY="636.0" mnemonicParsing="false" onAction="#Hit" prefHeight="45.0" prefWidth="110.0" text="Hit" />
+      <Button fx:id="doubledownButton" layoutX="430.0" layoutY="780.0" mnemonicParsing="false" onAction="#doubleDown" prefHeight="45.0" prefWidth="110.0" text="Double down" />
+      <Label fx:id="yourTurn" layoutX="403.0" layoutY="58.0" prefHeight="61.0" prefWidth="604.0" text="It's your turn. Pick an option near the bottom" textFill="#fc3d3d">
+         <font>
+            <Font name="Onyx" size="55.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="ghostcard" fitHeight="17.0" fitWidth="11.0" layoutX="1225.0" layoutY="833.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Pictures/Cards/red_back.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="youWin" layoutX="471.0" layoutY="75.0" prefHeight="65.0" prefWidth="470.0" text="YOU HAVE 21, YOU WON THE GAME" textFill="#ff3b3b">
+         <font>
+            <Font name="Onyx" size="57.0" />
+         </font>
+      </Label>
+      <Label fx:id="youLose" layoutX="443.0" layoutY="75.0" prefHeight="65.0" prefWidth="523.0" text="DEALER HAS 21, YOU LOST THE GAME" textFill="#ff3b3b">
+         <font>
+            <Font name="Onyx" size="57.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="playercard5" fitHeight="220.0" fitWidth="144.0" layoutX="75.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="playercard6" fitHeight="220.0" fitWidth="144.0" layoutX="74.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="playercard7" fitHeight="221.0" fitWidth="144.0" layoutX="74.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="youLosenot21" layoutX="222.0" layoutY="77.0" prefHeight="65.0" prefWidth="929.0" text="DEALER HAS A GREATER TOTAL UNDER OR EQUAL TO 21. YOU LOSE" textFill="#ff3b3b">
+         <font>
+            <Font name="Onyx" size="57.0" />
+         </font>
+      </Label>
+      <Label fx:id="youWinnot21" layoutX="259.0" layoutY="69.0" prefHeight="65.0" prefWidth="892.0" text="YOU HAVE A GREATER TOTAL UNDER OR EQUAL TO 21. YOU WIN" textFill="#ff3b3b">
+         <font>
+            <Font name="Onyx" size="57.0" />
+         </font>
+      </Label>
+      <Label fx:id="youPush" layoutX="332.0" layoutY="75.0" prefHeight="65.0" prefWidth="749.0" text="YOU AND THE DEALER HAVE EQUAL TOTALS. YOU PUSH" textFill="#ff3b3b">
+         <font>
+            <Font name="Onyx" size="57.0" />
+         </font>
+      </Label>
+      <Label fx:id="youBust" layoutX="455.0" layoutY="74.0" prefHeight="65.0" prefWidth="499.0" text="YOUR TOTAL IS OVER 21. YOU BUST" textFill="#ff3b3b">
+         <font>
+            <Font name="Onyx" size="57.0" />
+         </font>
+      </Label>
+      <Button fx:id="playagainButton" layoutX="926.0" layoutY="183.0" mnemonicParsing="false" onAction="#startGame" prefHeight="53.0" prefWidth="238.0" text="Play Again!" />
+      <Label fx:id="playAgain" layoutX="817.0" layoutY="122.0" prefHeight="65.0" prefWidth="456.0" text="CLICK TO BELOW TO PLAY AGAIN" textFill="#ff3b3b">
+         <font>
+            <Font name="Onyx" size="57.0" />
+         </font>
+      </Label>
+      <TextField fx:id="betAmount" layoutX="113.0" layoutY="577.0" prefHeight="53.0" prefWidth="211.0" text="100" />
+      <Label fx:id="enterBet" layoutX="21.0" layoutY="484.0" prefHeight="129.0" prefWidth="476.0" text="Enter the amount you'd like to bet below: " textFill="#ff4747">
+         <font>
+            <Font name="Onyx" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="enterBet" layoutX="139.0" layoutY="607.0" prefHeight="103.0" prefWidth="159.0" text="Default is $100. " textFill="#ff4747">
+         <font>
+            <Font name="Onyx" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="enterBet2" layoutX="8.0" layoutY="690.0" prefHeight="129.0" prefWidth="420.0" text="Your final dollar amount will appear below:" textFill="#ff4747">
+         <font>
+            <Font name="Onyx" size="40.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="betResult" layoutX="113.0" layoutY="783.0" prefHeight="53.0" prefWidth="211.0" />
+      <ImageView fx:id="displayCard" fitHeight="243.0" fitWidth="144.0" layoutX="74.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../bin/application/red_back.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
